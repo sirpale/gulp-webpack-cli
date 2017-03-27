@@ -171,9 +171,7 @@ gulp.task('clean',function(done){
 
 
 // 发布
-gulp.task('default',function(){
-	gulp.start('clean','md');
-});
+gulp.task('default',['md']);
 
 // 开发
 gulp.task('dev',function(){
