@@ -45,10 +45,6 @@ var pkg = require('./package.json');
 	5.md5加密css js
 */
 
-
-
-
-
 // 1.图片
 gulp.task('copy:images',function(done){
 	gulp.src(['src/images/**/*'])
@@ -137,7 +133,7 @@ gulp.task('md',['inject'],function(done){
 
 // 监听
 gulp.task('watch',function(done){
-	
+
 	var watcher = gulp.watch('src/**/*.*',['sassmin']);
 
 	livereload.listen();
